@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/shopping.css">
+</head>
+<body>
+        <div>
+            <h1><span id="word1">Life</span><span id="word2"> Time</span></h1>
+            <h1><span id="word3">Fruits</span></h1>
+            <h3>Taste The Nature</h3>
+        </div>
+    <div>
+        <button class="open-button"  data-toggle="modal" data-target="#myModal">Open Form</button>
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal Heading</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="/action_page.php">
+                        <div class="container">
+                        <h1>Register</h1>
+                        <p>Please fill in this form to create an account.</p>
+                        <hr>
+                    
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                    
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                    
+                        <label for="psw-repeat"><b>Repeat Password</b></label>
+                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                        <hr>
+                        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                    
+                        <button type="submit" class="registerbtn">Register</button>
+                        </div>
+                        
+                        <div class="container signin">
+                        <p>Already have an account? <a href="#">Sign in</a>.</p>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        <!-- Nav -->
+        <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+            <div class="row">
+                <div class="col">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="http://www.azspagirls.com/files/2010/09/orange.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Orange</h4>
+                            <p class="card-text">Price: R5.5</p>
+                            <a href="#" data-name="Orange" data-price="5.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="http://images.all-free-download.com/images/graphicthumb/vector_illustration_of_ripe_bananas_567893.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Banana</h4>
+                            <p class="card-text">Price: R3.50</p>
+                            <a href="#" data-name="Banana" data-price="3.50" class="add-to-cart btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 20rem;">
+                        <img class="card-img-top" src="https://3.imimg.com/data3/IC/JO/MY-9839190/organic-lemon-250x250.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Lemon</h4>
+                            <p class="card-text">Price: R5</p>
+                            <a href="#" data-name="Lemon" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- Modal -->
+        <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="show-cart table">
+                            
+                        </table>
+                        <div>Total price: R<span class="total-cart"></span></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Thankyou">Order now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="Thankyou">
+            <div class="modal-dialog">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">life Time Fruits</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <h1>THANK YOU</h1>
+                    <h1>FOR SHOPPING</h1>
+                    <h1>WITH US !!!</h1>
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>       
+    </div>
+    <script src="./script/shopping.js" type="text/javascript" ></script>
+</body>
+</html>

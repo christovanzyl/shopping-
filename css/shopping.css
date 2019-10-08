@@ -1,0 +1,164 @@
+body {
+    text-align:center;
+    width:100%;
+    margin:0 auto;
+    padding:0px;
+    font-family:helvetica;
+    background-color:#81DAF5;
+   
+    background: url("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2F1502826406%2F1708w-getty-fruit-closeup-CarstenSchanter-EyeEm.jpg%3Fitok%3DXFE9vQPZ&w=400&c=sc&poi=face&q=85") no-repeat center center fixed;
+    background-size: 120% auto;   
+    padding-top: 80px;
+}
+
+h1 {
+    font-size: 70px;
+    font-style: oblique;
+    color: darkblue;
+}
+
+h3 {
+    font-size: 40px;
+    font-style: oblique;
+    color: darkblue;
+}
+
+#word1 {
+    color: red;
+}
+
+
+#word2 {
+    color: yellow;    
+}
+
+#word3 {
+    color: green;    
+}
+  
+.show-cart li {
+    display: flex;
+}
+.card {
+    margin-bottom: 20px;
+}
+.card-img-top {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+}
+
+#wrapper
+{
+    text-align:center;
+    margin:0 auto;
+    padding:0px;
+    width:995px;
+}
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(70.4em, -37em);
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+.form-container .cancel {
+    background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+.container {
+    padding: 16px;
+    background-color: white;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+a {
+    color: dodgerblue;
+}
+
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
